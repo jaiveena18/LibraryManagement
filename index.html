@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 align="left">Library Management</h1>
+  </header>
+
+  <main>
+    <section id="filters" class="filters">
+      <div class="filter">
+        <label for="title">Title:</label>
+        <input type="text" id="title" placeholder="Enter title">
+      </div>
+      <div class="filter">
+        <label for="author">Author:</label>
+        <input type="text" id="author" placeholder="Enter author">
+      </div>
+      <div class="filter">
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" placeholder="Enter subject">
+      </div>
+      <div class="filter">
+        <label for="publishDate">Publish Date:</label>
+        <input type="date" id="publishDate">
+      </div>
+      <button onclick="filterBooks()">Filter</button>
+    </section>
+
+    <section id="bookList" class="book-list">
+      <div id="loading" class="loader"></div>
+      <div id="booksContainer"></div>
+    </section>
+
+    <section id="pagination" class="pagination"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
